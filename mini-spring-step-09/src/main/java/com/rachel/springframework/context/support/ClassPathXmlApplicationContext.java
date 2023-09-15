@@ -11,10 +11,10 @@ public class ClassPathXmlApplicationContext extends AbstractXmlApplicationContex
     /**
      * 从xml 中获取beanDefinitions，并刷新上下文
      *
-     * @param configLcations
+     * @param configLocations
      */
-    public ClassPathXmlApplicationContext(String configLcations) {
-        this(new String[]{configLcations});
+    public ClassPathXmlApplicationContext(String configLocations) {
+        this(new String[]{configLocations});
     }
 
     /**

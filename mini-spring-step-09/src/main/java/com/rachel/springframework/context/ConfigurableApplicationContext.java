@@ -1,9 +1,8 @@
 package com.rachel.springframework.context;
 
 import com.rachel.springframework.beans.BeansException;
-import com.rachel.springframework.beans.factory.ListableBeanFactory;
 
-public interface ConfigurableApplicationContext extends ListableBeanFactory {
+public interface ConfigurableApplicationContext extends ApplicationContext {
 
     void refresh() throws BeansException;
 
