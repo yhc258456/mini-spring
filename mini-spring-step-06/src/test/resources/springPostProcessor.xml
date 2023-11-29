@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
 
-    <bean id="userDao" class="cn.bugstack.springframework.test.bean.IUserDao"/>
+    <bean id="userDao" class="bean.cn.rachel.springframework.test.IUserDao"/>
 
-    <bean id="userService" class="cn.bugstack.springframework.test.bean.UserService">
+    <bean id="userService" class="bean.cn.rachel.springframework.test.UserService">
         <property name="uId" value="10001"/>
         <property name="company" value="腾讯"/>
         <property name="location" value="深圳"/>
         <property name="userDao" ref="userDao"/>
     </bean>
 
-    <bean class="cn.bugstack.springframework.test.common.MyBeanPostProcessor"/>
-    <bean class="cn.bugstack.springframework.test.common.MyBeanFactoryPostProcessor"/>
+    <bean class="common.cn.rachel.springframework.test.MyBeanPostProcessor"/>
+    <bean class="common.cn.rachel.springframework.test.MyBeanFactoryPostProcessor"/>
 
 </beans>
